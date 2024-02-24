@@ -61,6 +61,8 @@ function getHandler<Context extends DefaultContext = DefaultContext>(
             );
             if (swapRes.status === 200) {
               // TODO: create lock
+              // probably with interactoin throught nostr to give the client
+              // app the information required to create the lock transaction
               const resEvent = responseEvent('submarine-swap-ok', '', event);
               ctx.outbox.publish(resEvent);
             } else {
