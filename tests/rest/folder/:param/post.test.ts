@@ -1,5 +1,5 @@
 import { ExtendedRequest } from '@lawallet/module';
-import post from '@rest/folder/:param/post';
+import post from '../../../../src/rest/folder/:param/post';
 import type { Response } from 'express';
 
 describe('POST handler', () => {

@@ -1,5 +1,5 @@
 import { DefaultContext } from '@lawallet/module';
-import { getHandler } from '@nostr/subscriptionName';
+import { getHandler } from '../../src/nostr/subscriptionName';
 import { NostrEvent } from 'node_modules/@nostr-dev-kit/ndk/dist';
 
 describe('Nostr handler', () => {
