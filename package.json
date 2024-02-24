@@ -82,6 +82,7 @@
     "ts-jest-mock-import-meta": "^1.2.0",
     "typescript": "^5.3.3"
   },
+  "auto-install-peers": false,
   "overrides": {
     "nostr-tools": "npm:@lawallet/nostr-tools"
   },
