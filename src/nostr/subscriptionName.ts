@@ -16,6 +16,7 @@ const filter: NDKFilter = {
 function getHandler<Context extends DefaultContext = DefaultContext>(_ctx: Context): EventHandler {
   return (event: NostrEvent): Promise<void> => {
     console.log(event);
+    return Promise.resolve();
   };
 }
 
