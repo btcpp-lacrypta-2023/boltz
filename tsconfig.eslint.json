@@ -5,6 +5,6 @@
     "./tests/**/*",
     "./src/**/*",
     "./build.mjs",
-    "./jest.config.js"
+    "./jest.config.mjs"
   ]
 }
