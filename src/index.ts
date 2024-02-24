@@ -21,4 +21,4 @@ const module = Module.build<Context>({
   restPath: `${import.meta.dirname}/rest`,
 });
 
-void module.start();
+await module.start();
