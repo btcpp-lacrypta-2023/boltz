@@ -1,7 +1,13 @@
-import { Module, DefaultContext, getWriteNDK, DirectOutbox, requiredEnvVar } from '@lawallet/module';
+import {
+  Module,
+  DefaultContext,
+  getWriteNDK,
+  DirectOutbox,
+  requiredEnvVar,
+} from '@lawallet/module';
 import { PrismaClient } from '@prisma/client';
 
-type Context = DefaultContext & {prisma: PrismaClient};
+type Context = DefaultContext & { prisma: PrismaClient };
 
 const context: Context = {
   outbox: new DirectOutbox(getWriteNDK()),
@@ -9,10 +15,10 @@ const context: Context = {
 };
 
 const module = Module.build<Context>({
-    context,
-    nostrPath: `${import.meta.dirname}/nostr`,
-    port: Number(requiredEnvVar('PORT')),
-    restPath: `${import.meta.dirname}/rest`,
+  context,
+  nostrPath: `${import.meta.dirname}/nostr`,
+  port: Number(requiredEnvVar('PORT')),
+  restPath: `${import.meta.dirname}/rest`,
 });
 
 void module.start();
