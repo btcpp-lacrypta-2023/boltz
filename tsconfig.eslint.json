@@ -1,9 +1,10 @@
 {
   "extends": "./tsconfig.json",
   "include": [
+    "./__mocks__/**/*",
     "./tests/**/*",
     "./src/**/*",
-    "./build.js",
+    "./build.mjs",
     "./jest.config.js"
   ]
 }
