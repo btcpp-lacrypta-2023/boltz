@@ -38,7 +38,7 @@
   },
   "license": "AGPL-3.0-or-later",
   "dependencies": {
-    "@lawallet/module": "~0.3.1",
+    "@lawallet/module": "^0.4.0",
     "@nostr-dev-kit/ndk": "^2.5.0",
     "@prisma/client": "5.10.2",
     "debug": "^4.3.4",
@@ -68,7 +68,6 @@
     "concurrently": "^8.2.2",
     "esbuild": "^0.20.1",
     "eslint": "^8.57.0",
-    "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
